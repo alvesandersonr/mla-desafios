@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgb(20, 20, 20);
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+article {
+    display: flex;    
+    background-color: rgb(73, 70, 70);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;    
+    align-items: center;
+    min-width: 200px;
+}
+
+.steps {
+
+    h2, span {    
+        font-size: 13px;
+    }
+
+    h2 {
+        color: rgb(197, 196, 196);
+    }
+
+    span {
+        color: rgb(156, 155, 155);
+    }
+    
+}
+
+#first-step {
+    position: relative;
+    display: flex;
+}
+
+#first-step::after {   
+    content: " ";  
+    background-color:  rgb(73, 70, 70);;
+    position: absolute;
+    right: -7.5px;
+    width: 15px;
+    height: 15px;    
+    border-radius: 50%;
+}
+
+#line {
+    background-color: rgb(73, 70, 70);
+    width: 50px;
+    height: 4px;
+}
+
+#second-step {    
+    border-radius: 0 10px 10px 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 50px;
+    position: relative;
+}
+
+#second-step::after {       
+    content: " "; 
+    background-color:  rgb(73, 70, 70);
+    position: absolute;
+    left: -7.5px;
+    width: 15px;
+    height: 15px;    
+    border-radius: 50%;
+}
+
+#second-step::before {   
+    content: "Matrix: prepare-release-on-se... "; 
+    font-size: 11px;
+    padding: 10px 0 0 20px;
+    color: rgb(197, 196, 196);
+    background-color:  rgb(73, 70, 70);
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 70%;
+    height: 20px;    
+    border-radius: 5px;    
+    z-index: -1;
+}
+
+
+#second-step-content {
+    display: flex;    
+    gap: 10px;    
+}
+
+
+#second-step-link {
+   position: absolute;
+   padding-top: 60px;   
+
+    a {
+        color: rgb(156, 155, 155);
+        text-decoration: none;
+        font-size: 12px;        
+    }
+}
